@@ -14,6 +14,29 @@ console.log("line two"); // runs second
 console.log("line three"); // runs third 
 ```
 
+- - - - -
+
+```js
+console.log(1);
+console.log(2);
+
+setTimeout(() => {
+  console.log('callback function fired');
+}, 2000);
+
+console.log(3);
+console.log(4);
+
+// output:
+//  1
+//  2
+//  3
+//  4
+//  {after 2000ms} callback function fired
+
+```
+
+
 - - - - - 
 
 # single-threaded language
